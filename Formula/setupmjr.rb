@@ -5,21 +5,21 @@
 class Setupmjr < Formula
   desc "Cross-platform setup utility"
   homepage "https://github.com/MiguelRodo/setupmjr"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/MiguelRodo/setupmjr/releases/download/v0.1.0/setupmjr_0.1.0_darwin_amd64.tar.gz"
-      sha256 "fdb903c035af89f2a834e074b5a6b38f0defd90ebad3ade788c17a2d0dfc47e1"
+      url "https://github.com/MiguelRodo/setupmjr/releases/download/v0.2.0/setupmjr_0.2.0_darwin_amd64.tar.gz"
+      sha256 "b3abbada675ab163aaad2d28d46c1fa0dcb9796baa22e91eb44093f4eb25430f"
 
       def install
         bin.install "setupmjr"
       end
     end
     on_arm do
-      url "https://github.com/MiguelRodo/setupmjr/releases/download/v0.1.0/setupmjr_0.1.0_darwin_arm64.tar.gz"
-      sha256 "d2ec1a001a4cb38a8ae721e4075458d468efa3f2d1f85df946af968dc11c876c"
+      url "https://github.com/MiguelRodo/setupmjr/releases/download/v0.2.0/setupmjr_0.2.0_darwin_arm64.tar.gz"
+      sha256 "583a7d9a626505037da59014fdd44f8db852667279e712821d29e2c0da47d0ef"
 
       def install
         bin.install "setupmjr"
@@ -30,8 +30,8 @@ class Setupmjr < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/MiguelRodo/setupmjr/releases/download/v0.1.0/setupmjr_0.1.0_linux_amd64.tar.gz"
-        sha256 "970ec2eb4c088e87ad4d3e9231307c64340c3c8c0197afd2106d83a903ccea07"
+        url "https://github.com/MiguelRodo/setupmjr/releases/download/v0.2.0/setupmjr_0.2.0_linux_amd64.tar.gz"
+        sha256 "37d30f62664c5971eebbe71e1bf75c833659ea40c13764c4d12ac4e98433bfca"
 
         def install
           bin.install "setupmjr"
@@ -40,8 +40,8 @@ class Setupmjr < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/MiguelRodo/setupmjr/releases/download/v0.1.0/setupmjr_0.1.0_linux_arm64.tar.gz"
-        sha256 "6b2e693c9ab45ff68f2d5bbdd669bdbafdc456909f91f9a2332783a44bbe197c"
+        url "https://github.com/MiguelRodo/setupmjr/releases/download/v0.2.0/setupmjr_0.2.0_linux_arm64.tar.gz"
+        sha256 "d5a2484f857fa28711c368588bb32c3fa36d626382ca197300bf92ffa243c42f"
 
         def install
           bin.install "setupmjr"
