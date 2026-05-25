@@ -5,21 +5,21 @@
 class Repos < Formula
   desc "Cross-platform CLI for managing multiple related Git repositories as a unified workspace"
   homepage "https://github.com/MiguelRodo/repos"
-  version "2.6.0"
+  version "2.6.1"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/MiguelRodo/repos/releases/download/v2.6.0/repos_2.6.0_darwin_amd64.tar.gz"
-      sha256 "2bafe7b197ac0bc4838b55c74a719d92de0783a1dfeee56df685a0ccc066efe0"
+      url "https://github.com/MiguelRodo/repos/releases/download/v2.6.1/repos_2.6.1_darwin_amd64.tar.gz"
+      sha256 "5e8dc419799e9a7a793d7c3ab5fc7d3ac5c98e6e10d9af766c13cb326eff1ca1"
 
       def install
         bin.install "repos"
       end
     end
     on_arm do
-      url "https://github.com/MiguelRodo/repos/releases/download/v2.6.0/repos_2.6.0_darwin_arm64.tar.gz"
-      sha256 "584a5eb3ded5e06bc546ce081eb1330b30589f67221a2fe7c43511049d138286"
+      url "https://github.com/MiguelRodo/repos/releases/download/v2.6.1/repos_2.6.1_darwin_arm64.tar.gz"
+      sha256 "16f1e9f69879d3280a78db8196b6e295f3b553c034469e01736b3b1b0b6eb59a"
 
       def install
         bin.install "repos"
@@ -30,8 +30,8 @@ class Repos < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/MiguelRodo/repos/releases/download/v2.6.0/repos_2.6.0_linux_amd64.tar.gz"
-        sha256 "ed3afc495d3dac7a07445bbc1cec34044105857865fd7dcad260aeb1377622f9"
+        url "https://github.com/MiguelRodo/repos/releases/download/v2.6.1/repos_2.6.1_linux_amd64.tar.gz"
+        sha256 "6b22afdfc6395c38a31ab78ff80996b694f37df08ce98dd7cb32ed53e6ceebcf"
 
         def install
           bin.install "repos"
@@ -40,8 +40,8 @@ class Repos < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/MiguelRodo/repos/releases/download/v2.6.0/repos_2.6.0_linux_arm64.tar.gz"
-        sha256 "24c9161dc08828a6a65f5da0bdd9a8e214782c50b90d541f0c488145d3f14964"
+        url "https://github.com/MiguelRodo/repos/releases/download/v2.6.1/repos_2.6.1_linux_arm64.tar.gz"
+        sha256 "5110f2dc067078b4250de7380ad370e9b69ab5d44dfef467bdadec1d6750ccd9"
 
         def install
           bin.install "repos"
