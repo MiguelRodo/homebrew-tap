@@ -5,23 +5,23 @@
 class Setupmjr < Formula
   desc "Cross-platform setup utility"
   homepage "https://github.com/MiguelRodo/setupmjr"
-  version "0.7.2"
+  version "0.7.3"
   license "MIT"
 
   depends_on "MiguelRodo/homebrew-tap/repos"
 
   on_macos do
     on_intel do
-      url "https://github.com/MiguelRodo/setupmjr/releases/download/v0.7.2/setupmjr_0.7.2_darwin_amd64.tar.gz"
-      sha256 "dbec96445a4f00cbed943a1bc3c1c67f9e5cb3160c198e86cad27ab53e598772"
+      url "https://github.com/MiguelRodo/setupmjr/releases/download/v0.7.3/setupmjr_0.7.3_darwin_amd64.tar.gz"
+      sha256 "5533acd3b527c3122a9fc04905aa3b87b0beaa9be6e135604f36262c0ca826c1"
 
       def install
         bin.install "setupmjr"
       end
     end
     on_arm do
-      url "https://github.com/MiguelRodo/setupmjr/releases/download/v0.7.2/setupmjr_0.7.2_darwin_arm64.tar.gz"
-      sha256 "e39c5a95dd688ee68bcc7511afb55734d42ece7325d393c808b9c2760af266da"
+      url "https://github.com/MiguelRodo/setupmjr/releases/download/v0.7.3/setupmjr_0.7.3_darwin_arm64.tar.gz"
+      sha256 "0d4ec1a0ff42510ed635354a30eebd2feb60bb3093f529c1ccaac9c2ee4e5888"
 
       def install
         bin.install "setupmjr"
@@ -32,8 +32,8 @@ class Setupmjr < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/MiguelRodo/setupmjr/releases/download/v0.7.2/setupmjr_0.7.2_linux_amd64.tar.gz"
-        sha256 "895ff38b94748ab2e7ce8174a6a961b8d92eaf0ca73bd88713c62f04ef2d24d4"
+        url "https://github.com/MiguelRodo/setupmjr/releases/download/v0.7.3/setupmjr_0.7.3_linux_amd64.tar.gz"
+        sha256 "4e1cf9676007d96994c3750a80f86389feda41b3a1af0ea5f8b63faf6edd9d7a"
 
         def install
           bin.install "setupmjr"
@@ -42,8 +42,8 @@ class Setupmjr < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/MiguelRodo/setupmjr/releases/download/v0.7.2/setupmjr_0.7.2_linux_arm64.tar.gz"
-        sha256 "a329e4d60650c34e74479f5a002d5ad733dec27c885ac4064ee590e9b84995ae"
+        url "https://github.com/MiguelRodo/setupmjr/releases/download/v0.7.3/setupmjr_0.7.3_linux_arm64.tar.gz"
+        sha256 "982211bba9ab4563ddbd8c25ef3c7703e2eea2b748b5079c5f820bf1eee16f45"
 
         def install
           bin.install "setupmjr"
