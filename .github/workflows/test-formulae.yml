@@ -16,8 +16,10 @@ jobs:
       - name: Checkout tap
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
-      - name: Tap this checkout
-        run: brew tap MiguelRodo/tap "file://$GITHUB_WORKSPACE"
+      - name: Tap and trust this checkout
+        run: |
+          brew tap MiguelRodo/tap "file://$GITHUB_WORKSPACE"
+          brew trust MiguelRodo/tap
 
       - name: Install setupmjr and repos dependency
         run: |
