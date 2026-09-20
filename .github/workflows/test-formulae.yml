@@ -1,0 +1,28 @@
+name: Test Homebrew formulae
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  install:
+    runs-on: macos-latest
+    env:
+      HOMEBREW_NO_AUTO_UPDATE: 1
+
+    steps:
+      - name: Checkout tap
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Tap this checkout
+        run: brew tap MiguelRodo/tap "file://$GITHUB_WORKSPACE"
+
+      - name: Install setupmjr and repos dependency
+        run: |
+          brew install MiguelRodo/tap/setupmjr
+          brew list --versions setupmjr
+          brew list --versions repos
+          setupmjr --version
+          repos --version
