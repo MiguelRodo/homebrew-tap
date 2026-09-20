@@ -9,11 +9,14 @@ This repository is published to Homebrew as the tap `MiguelRodo/tap`.
 
 ## Installation
 
-Add the tap once:
+Add and trust the tap once:
 
 ```bash
 brew tap MiguelRodo/tap
+brew trust MiguelRodo/tap
 ```
+
+Homebrew 6 requires explicit trust for non-official taps. Whole-tap trust is appropriate here when you intend to use these related formulae together.
 
 Install a formula with its fully qualified name:
 
