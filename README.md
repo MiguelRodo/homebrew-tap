@@ -1,42 +1,40 @@
 # MiguelRodo's Homebrew Tap
 
-This repository is a custom [Homebrew](https://brew.sh/) Tap for installing my personal tools and scripts on macOS.
+This repository is published to Homebrew as the tap `MiguelRodo/tap`.
 
-## Included Formulae
+## Formulae
 
-* **repos** - A CLI tool to manage, clone, and setup git repositories.
+- `repos` - Cross-platform CLI for managing related Git repositories.
+- `setupmjr` - Cross-platform setup utility. The formula depends on `repos` from this tap.
 
 ## Installation
 
-You can install the tools by tapping this repository and then installing the specific package.
-
-### 1. Add this Tap
-Register this repository with your Homebrew installation:
+Add the tap once:
 
 ```bash
-brew tap MiguelRodo/repos
+brew tap MiguelRodo/tap
 ```
 
-### 2. Install Tools
-
-You can now install the tools directly:
+Install a formula with its fully qualified name:
 
 ```bash
-brew install repos
+brew install MiguelRodo/tap/repos
+brew install MiguelRodo/tap/setupmjr
 ```
 
-*Note: This will automatically install required dependencies (like `jq`).*
+Installing `setupmjr` installs `MiguelRodo/tap/repos` automatically as a dependency.
+
+The tap name follows Homebrew's standard mapping: `MiguelRodo/tap` resolves to the GitHub repository `MiguelRodo/homebrew-tap`.
 
 ## Updating
 
-To get the latest versions of the tools, simply run standard Homebrew updates:
+Use normal Homebrew updates:
 
 ```bash
 brew update
-brew upgrade repos
+brew upgrade MiguelRodo/tap/setupmjr
 ```
 
-## Issues & Contributing
+## Issues
 
-If you encounter issues with the installation (the formula), please open an issue in this repository.
-For issues with the tool logic itself, please open an issue in the [source repository](https://github.com/MiguelRodo/repos).
+For packaging or tap problems, open an issue in the repository that publishes the affected formula. For tool behaviour, use the corresponding source repository (`MiguelRodo/setupmjr` or `MiguelRodo/repos`).
