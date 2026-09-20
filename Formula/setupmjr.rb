@@ -8,7 +8,7 @@ class Setupmjr < Formula
   version "0.7.5"
   license "MIT"
 
-  depends_on "MiguelRodo/homebrew-tap/repos"
+  depends_on "MiguelRodo/tap/repos"
 
   on_macos do
     on_intel do
